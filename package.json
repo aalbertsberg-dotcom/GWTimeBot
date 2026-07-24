@@ -1,0 +1,24 @@
+{
+  "name": "gwtimebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "botbuilder": "^4.23.3",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "restify": "^11.1.0",
+    "sharp": "^0.35.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
