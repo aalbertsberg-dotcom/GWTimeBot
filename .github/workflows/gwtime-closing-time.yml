@@ -2,10 +2,11 @@ name: GWTime Closing Time
 
 on:
   schedule:
+    # Monday-Friday only.
     # 3:29 PM Central.
     # GitHub schedules use UTC, so this checks both daylight/standard UTC times.
     # The bot only sends if the current Central time is inside the closing window.
-    - cron: "29 20,21 * * *"
+    - cron: "29 20,21 * * 1-5"
 
   workflow_dispatch:
 
