@@ -5,8 +5,6 @@ on:
     - cron: "29,34,39,44,49,54,59 20,21 * * 1-5"
   workflow_dispatch:
 
-  workflow_dispatch:
-
 jobs:
   closing-time:
     runs-on: ubuntu-latest
@@ -14,4 +12,4 @@ jobs:
     steps:
       - name: Trigger GWTime closing time
         run: |
-          curl --fail-with-body "${{ secrets.GWTIME_CLOSING_URL }}"
+          curl --fail-with-body -sS "${{ secrets.GWTIME_CLOSING_URL }}"
