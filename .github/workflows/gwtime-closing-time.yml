@@ -2,8 +2,7 @@ name: GWTime Closing Time
 
 on:
   schedule:
-    - cron: "29,34,39,44,49,54,59 15 * * 1-5"
-      timezone: "America/Chicago"
+    - cron: "29,34,39,44,49,54,59 20,21 * * 1-5"
   workflow_dispatch:
 
 jobs:
